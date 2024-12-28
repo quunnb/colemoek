@@ -1,0 +1,95 @@
+partial alphanumeric_keys
+xkb_symbols "mokki" {
+
+    name[Group1]="Finnish (Mökki)";
+
+    key <TLDE> { [ grave,        asciitilde,  dead_tilde,      NoSymbol       ] };
+    key <AE01> { [ 1,            exclam,      exclamdown,      NoSymbol       ] };
+    key <AE02> { [ 2,            question,    at,              questiondown   ] };
+    key <AE03> { [ 3,            numbersign,  sterling,        NoSymbol       ] };
+    key <AE04> { [ 4,            dollar,      EurSign,         NoSymbol       ] };
+    key <AE05> { [ 5,            percent,     permille,        NoSymbol       ] };
+    key <AE06> { [ 6,            asciicircum, dead_circumflex, NoSymbol       ] };
+    key <AE07> { [ 7,            ampersand,   NoSymbol,        NoSymbol       ] };
+    key <AE08> { [ 8,            asterisk,    infinity,        NoSymbol       ] };
+    key <AE09> { [ 9,            parenleft,   NoSymbol,        NoSymbol       ] };
+    key <AE10> { [ 0,            parenright,  degree,          NoSymbol       ] };
+    key <AE11> { [ minus,        underscore,  dead_macron,     NoSymbol       ] };
+    key <AE12> { [ equal,        plus,        notequal,        plusminus      ] };
+
+    key <AD01> { [ q,            Q,           NoSymbol,        NoSymbol       ] };
+    key <AD02> { [ w,            W,           NoSymbol,        NoSymbol       ] };
+    key <AD03> { [ f,            F,           braceleft,       NoSymbol       ] };
+    key <AD04> { [ p,            P,           braceright,      Greek_pi       ] };
+    key <AD05> { [ g,            G,           Greek_gamma,     Greek_GAMMA    ] };
+    key <AD06> { [ j,            J,           NoSymbol,        NoSymbol       ] };
+    key <AD07> { [ l,            L,           Greek_lambda,    Greek_LAMBDA   ] };
+    key <AD08> { [ u,            U,           udiaeresis,      Udiaeresis     ] };
+    key <AD09> { [ y,            Y,           yen,             NoSymbol       ] };
+    key <AD10> { [ adiaeresis,   Adiaeresis,  ae,              AE             ] };
+    key <AD11> { [ bracketleft,  braceleft,   NoSymbol,        NoSymbol       ] };
+    key <AD12> { [ bracketright, braceright,  dead_acute,      NoSymbol       ] };
+
+    key <AC01> { [ a,            A,           Greek_alpha,     Greek_ALPHA    ] };
+    key <AC02> { [ s,            S,           U00DF,           U1E9E          ] };
+    key <AC02> { [ r,            R,           parenleft,       Greek_RO       ] };
+    key <AC03> { [ s,            S,           parenright,      Greek_SIGMA    ] };
+    key <AC04> { [ t,            T,           Greek_tau,       trademark      ] };
+    key <AC05> { [ d,            D,           Greek_delta,     Greek_DELTA    ] };
+    key <AC06> { [ h,            H,           Left,            NoSymbol       ] };
+    key <AC07> { [ n,            N,           Down,            NoSymbol       ] };
+    key <AC08> { [ e,            E,           Up,              NoSymbol       ] };
+    key <AC09> { [ i,            I,           Right,           NoSymbol       ] };
+    key <AC10> { [ o,            O,           aring,           Aring          ] };
+    key <AC11> { [ odiaeresis,   Odiaeresis,  oe,              OE             ] };
+    key <BKSL> { [ apostrophe,   quotedbl,    dead_grave,      NoSymbol       ] };
+
+    key <LSGT> { [ less,         greater,     bar,             NoSymbol       ] };
+    key <AB01> { [ z,            Z,           ezh,             EZH            ] };
+    key <AB02> { [ x,            X,           multiply,        periodcentered ] };
+    key <AB03> { [ c,            C,           copyright,       NoSymbol       ] };
+    key <AB04> { [ v,            V,           dead_caron,      NoSymbol       ] };
+    key <AB05> { [ b,            B,           Greek_beta,      Greek_BETA     ] };
+    key <AB06> { [ k,            K,           Greek_kappa,     Greek_KAPPA    ] };
+    key <AB07> { [ m,            M,           mu,              emdash         ] };
+    key <AB08> { [ comma,        semicolon,   dead_cedilla,    NoSymbol       ] };
+    key <AB09> { [ period,       colon,       dead_diaeresis,  NoSymbol       ] };
+    key <AB10> { [ slash,        backslash,   endash,          emdash         ] };
+
+
+    include "level3(ralt_switch)"
+};
+
+xkb_symbols "min" {
+
+    include "mokki"
+    name[Group1]="Finnish (Leikkimökki)";
+
+    key <AD10> { [ comma,        semicolon,   dead_cedilla,    NoSymbol       ] };
+    key <AC11> { [ period,       colon,       dead_diaeresis,  NoSymbol       ] };
+
+    key <AB08> { [ odiaeresis,   Odiaeresis,  oe,              OE             ] };
+    key <AB09> { [ adiaeresis,   Adiaeresis,  ae,              AE             ] };
+    key <AB10> { [ slash,        backslash,   endash,          emdash         ] };
+
+};
+
+
+xkb_symbols "sym" {
+
+    include "mokki"
+    name[Group1]="Finnish (Möcci)";
+
+    key <AE01> { [ exclam,      1, exclamdown,      NoSymbol     ] };
+    key <AE02> { [ question,    2, at,              questiondown ] };
+    key <AE03> { [ numbersign,  3, sterling,        NoSymbol     ] };
+    key <AE04> { [ dollar,      4, currency,        NoSymbol     ] };
+    key <AE05> { [ percent,     5, permille,        NoSymbol     ] };
+    key <AE06> { [ asciicircum, 6, dead_circumflex, NoSymbol     ] };
+    key <AE07> { [ ampersand,   7, NoSymbol,        NoSymbol     ] };
+    key <AE08> { [ asterisk,    8, infinity,        NoSymbol     ] };
+    key <AE09> { [ parenleft,   9, NoSymbol,        NoSymbol     ] };
+    key <AE10> { [ parenright,  0, degree,          NoSymbol     ] };
+
+};
+
