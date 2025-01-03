@@ -58,25 +58,25 @@ xkb_symbols "colemoek" {
     include "level3(ralt_switch)"
 };
 
-xkb_symbols "min" {
+xkb_symbols "colemaek-gm" {
 
     include "colemoek"
-    name[Group1]="Finnish (Leikkimök)";
+    name[Group1]="Finnish (Colemäk-GM)";
 
-    key <AD10> { [ comma,        semicolon,   dead_cedilla,    NoSymbol       ] };
-    key <AC11> { [ period,       colon,       dead_diaeresis,  NoSymbol       ] };
+    key <AD10> { [ period,       colon,       dead_diaeresis,  NoSymbol       ] };
+    key <AC11> { [ comma,        semicolon,   dead_cedilla,    NoSymbol       ] };
 
-    key <AB08> { [ odiaeresis,   Odiaeresis,  oe,              OE             ] };
-    key <AB09> { [ adiaeresis,   Adiaeresis,  ae,              AE             ] };
+    key <AB08> { [ adiaeresis,   Adiaeresis,  ae,              AE             ] };
+    key <AB09> { [ odiaeresis,   Odiaeresis,  oe,              OE             ] };
     key <AB10> { [ slash,        backslash,   endash,          emdash         ] };
 
 };
 
 
-xkb_symbols "sym" {
+xkb_symbols "moexxoer" {
 
     include "colemoek"
-    name[Group1]="Finnish (Colemöxör)";
+    name[Group1]="Finnish (ColemöXXör)";
 
     key <AE01> { [ exclam,      1, exclamdown,      NoSymbol     ] };
     key <AE02> { [ question,    2, at,              questiondown ] };
